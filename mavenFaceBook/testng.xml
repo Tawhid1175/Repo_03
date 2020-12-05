@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smoke"> 
+
+<parameter name="userid" value ="3"></parameter>
+<test thread-count ="5" name="RegressionTest">
+
+
+
+
+<classes>
+
+<class name ="Package_05_RestAssured_Data_Driven.Pro_04_delete_02"></class>
+
+
+</classes>
+
+
+</test>
+
+</suite>
