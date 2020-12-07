@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="suite">
+<test name ="regression test" >
+<groups>
+
+<run>
+
+<exclude name="smoke "></exclude>
+
+
+
+
+
+</run>
+
+
+
+</groups>
+
+
+<classes>
+<class name="Package_01_First_TestNG.Program_06a_groups_Test" ></class>
+
+
+
+
+</classes>
+
+
+
+
+
+</test>
+
+</suite>

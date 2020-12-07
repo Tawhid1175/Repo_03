@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name= " somke">
+
+<test  thread-count= "1" name= "regressionterti">
+
+
+
+
+
+
+<classes>
+
+<class name="Package_01_First_TestNG.Program_06a_groups_Test"></class>
+
+
+
+</classes>
+
+
+
+
+
+</test>
+
+
+
+</suite>
+
+
