@@ -15,20 +15,21 @@ public class alam {
 
 	public static void main(String[] args) {
 		
-		 System.setProperty("webdriver.chrome.driver","C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
-		 WebDriver driver = new ChromeDriver();
-		 driver.navigate().to("https://www.facebook.com");
+		  System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
+
+		  WebDriver driver = new ChromeDriver();
+		  driver.navigate().to("https://www.facebook.com");
 		  
-		 driver.manage().window().maximize();
+		  driver.manage().window().maximize();
 		  
-          String useremail = " taw, alam";
+		  String alam = " hmm, tahhh";
+		  
+		
           
-          String []emailid = useremail.split(",");
-          String email =emailid[0].trim();
-          String pass =emailid[1].trim();
           
-          driver.findElement(By.id("email")).sendKeys(email);
-          driver.findElement(By.id("pass")).sendKeys(pass);
+          
+         // driver.findElement(By.id("email")).sendKeys(ala);
+       //   driver.findElement(By.id("pass")).sendKeys(ta);
 
 
 	}

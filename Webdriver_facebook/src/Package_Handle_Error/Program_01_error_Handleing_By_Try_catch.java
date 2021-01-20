@@ -21,7 +21,7 @@ public class Program_01_error_Handleing_By_Try_catch {
 		//  sei code ta run kortec na , ba korabo na, sei code to mark kore nite hobe than
 		// right click kore Surround With e giye. Try/catch Block click korte hobe
 
-		  System.setProperty("webdriver.chrome.driver","C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 		  WebDriver driver = new ChromeDriver();
 		  driver.navigate().to("https://www.facebook.com");
 		  
@@ -38,7 +38,7 @@ public class Program_01_error_Handleing_By_Try_catch {
 		} catch (InterruptedException e) {
 		
 			e.printStackTrace();
-		}// souranding diye kora jai
+		}   // souranding diye kora jai
 		  
 		  driver.findElement(By.xpath("//button[@type='submit']")).click();
 		  

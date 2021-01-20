@@ -10,7 +10,7 @@ public class Program_01a_Locator_id_Name {
 	public static void main(String[] args) throws InterruptedException {
 	
 		
-		System.setProperty("webdriver.chorme.driver", "C:\\MY Testing File\\Selenium\\Tools");
+		System.setProperty("webdriver.chorme.driver", "C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 		
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.facebook.com/");

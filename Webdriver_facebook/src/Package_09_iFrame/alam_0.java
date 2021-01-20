@@ -9,7 +9,7 @@ public class alam_0 {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		    System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
+		    System.setProperty("webdriver.chrome.driver", "C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 			
 			WebDriver driver = new ChromeDriver();
 			
@@ -17,20 +17,21 @@ public class alam_0 {
 			
 			driver.manage().window().maximize();
 			
-		    WebElement frame_one = driver.findElement(By.xpath("//frame[@name='packageListFrame']"));
-            driver.switchTo().frame(frame_one);
+			 driver.findElement(By.linkText("org.openqa.selenium.chrome")).click();
+			 
+			 Thread.sleep(1000);
+			 driver.findElement(By.linkText("ChromeDriver")).click();
+			 
+			 Thread.sleep(1000);
+			 
+			 driver.findElement(By.linkText("org.openqa.selenium.remote.RemoteWebDriver")).click();
+			 
+			 
 			
-			driver.findElement(By.linkText("com.thoughtworks.selenium")).click();
-			
-			Thread.sleep(1000);
-			
-			driver.switchTo().defaultContent();
 			
 			
-		WebElement second_fram = driver.findElement(By.xpath("//frame[@name='packageFrame']"));
-		driver.switchTo().frame(second_fram);
-		
-		driver.findElement(By.linkText("Selenium")).click();
-	}
+			
+		    
 
+}
 }

@@ -9,10 +9,16 @@ public class alam {
 		
 		//tagname[Text()='visible text']
 		//tagname[stars-with(@attribute,'value')]
-		//
 		
 		
+		//tagname[@attribute='value']
+		//tagname[contains(@attribute,'value')]
 		
+		//tagname[start-with(@attribute,'value')]
+		//tagname[@attribute='value' and @attribute='value']
+		
+		
+		//tagname[Text
 		
 		
 		

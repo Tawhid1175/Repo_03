@@ -23,21 +23,31 @@ public class Practice {
 
 
 	      public static void main(String[] args) throws IOException, InterruptedException {
-		
-		  System.setProperty("webdriver.chrome.driver","C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
-		  WebDriver driver = new ChromeDriver();
-		  driver.navigate().to("https://www.facebook.com");
-		  
+	    	  
+	    	  
+		 System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 
-		     driver.manage().window().maximize();
-      
+		  WebDriver driver = new ChromeDriver();
+		  
+		  driver.navigate().to("https://www.facebook.com");
+
            
-		      Actions act  = new Actions(driver);
+		   driver.manage().window().maximize();
+      
+		  
+		   
+		 Actions act = new Actions(driver); 
+		 
+		 WebElement small = driver.findElement(By.id("email"));
+		 
+		 act.moveToElement(small).keyDown(Keys.SHIFT).sendKeys("amm").build().perform();
+		   
+		   
 		     
 		      
 		    //  String tab = Keys.chord(Keys.CONTROL, Keys.ENTER);
 		      
-		      WebElement window = driver.findElement(By.linkText("Forgot Password?"));
+		    /*  WebElement window = driver.findElement(By.linkText("Forgot Password?"));
 		      
 		    act.moveToElement(window).keyDown(Keys.SHIFT).sendKeys("alal").build().perform();
 		    
@@ -45,7 +55,7 @@ public class Practice {
 		     
 		    act.dragAndDropBy(window, 4000, 0) .build().perform();
 		    
-		    driver.switchTo().alert().dismiss();
+		    driver.switchTo().alert().dismiss(); */
 		     
 		
    // WebElement slide = driver.findElement(By.xpath("//span[@class='ui-slider-handle ui-corner-all ui-state-default']"));

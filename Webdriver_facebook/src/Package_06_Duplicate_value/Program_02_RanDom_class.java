@@ -17,6 +17,9 @@ public class Program_02_RanDom_class {
 		Integer Ran1 = alam.nextInt();
 		System.out.println(Ran1);
 		
+		Integer Ran2 = alam.nextInt();
+		System.out.println(Ran2);
+		
 	}
 
 }

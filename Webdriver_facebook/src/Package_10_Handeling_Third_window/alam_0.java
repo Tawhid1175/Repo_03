@@ -14,62 +14,61 @@ public class alam_0 {
 
 	public static void main(String[] args) {
 		
-		  System.setProperty("webdriver.chrome.driver","C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 
 		  WebDriver driver = new ChromeDriver();
 		  driver.navigate().to("https://www.facebook.com");
 		  driver.manage().window().maximize();
 		  
 		  
-		  String Current_window = driver.getCurrentUrl();
-		  System.out.println(Current_window );
+		 String current_window = driver.getCurrentUrl();
+		 System.out.println(current_window);
+		 
+		 Actions act = new Actions(driver);
+		 
+		WebElement forgot = driver.findElement(By.linkText("Forgot Password?"));
+		
+		 for ( int a =0; a< 3;a++ ) {
+			 
+			act.keyDown(Keys.SHIFT).click(forgot).build().perform();
+		 }
+		 
+		  Set<String> setwindow = driver.getWindowHandles();
 		  
-		  
-		  Actions act = new Actions( driver);
-		  
-          WebElement til = driver.findElement(By.linkText("Forgot Password?"));	 
-          
-           for( int a = 0; a<2; a++) {
-        	act.keyDown(Keys.SHIFT) .click(til).build().perform();  
-        	
-        	
-        	   
-           }
-		  
-		 Set<String> setwindow = driver.getWindowHandles() ;
-		  
-		   Iterator<String> iter = setwindow.iterator();
-		       
-		     while(iter.hasNext()) {
+		     Iterator<String> iter = setwindow.iterator();
+		     
+		     while (iter.hasNext()) {
 		    	 
-		    String secondwindow = iter.next();
+		    	String second = iter.next();
+		    	
+		    	if ( !current_window.equals(second)) {
+		    		
+		    		driver.switchTo().window(second);
+		    		
+		    		driver.navigate().to("https://www.youtube.com/");
+		    		break;
+		    	}
+		    	 
+		    	 
+		     }
 		    
-		    if(!Current_window.equals(secondwindow)) {
-		    	
-		    	driver.switchTo().window(secondwindow);
-		    	
-		    	driver.navigate().to("https://www.google.com/");
-				break;
-		    }
+		     String third = iter.next();
+		     if (!current_window.equals(third) ) {
 		    	 
-		     }  
-		     
-		     String thirdwindow = iter.next();
-		     
-		     if ( !Current_window.equals(thirdwindow) ) {
+		     driver.switchTo().window(third);
 		    	 
-		    	 driver.switchTo().window(thirdwindow);
+		     driver.navigate().to("https://www.amazon.com/");
 		     
-		     driver.navigate().to("https://www.google.com/gmail/about/#");
-		     }   	   
-	}
+		     
+		     }
+	
 
 	    
 
     
 	 
 
-		     
+  }	     
 	
  }
 

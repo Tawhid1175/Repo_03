@@ -13,32 +13,43 @@ public class Alam {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver_win32/chromedriver.exe");
+		
+		System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
+
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		
-		ArrayList<String> al = new ArrayList<>(String);
+		driver.manage().window().maximize();
 		
-		    al.add("alam");
-		    al.add("alam2");
-		    al.add("alam@yahoo.com");
-		    al.add("alam@yahoo.com");
-		    al.add("1234");
+		driver.findElement(By.xpath("//a[contains(@id,'u_0_2')]")).click();
+		
+	/*	ArrayList<String> al = new ArrayList<String>();
+		
+		
+		al.add("Tawhid");
+		
+		al.add("alam");
+		al.add("alam@gmail.com");
+		al.add("alam@gmail.com");
+		al.add("1234");
 		    
-		System.out.println("total size :" + al.size());
+		//System.out.println("total size :" + al.size());
 		
 		String firstuser = al.get(0);
 		String lastuser  = al.get(1);
 		String email     = al.get(2);
 		String Re_email  = al.get(3);
-		String pw        =al.get(4);
+		String pw        = al.get(4); */
 		
+		driver.findElement(By.xpath("//input[contains(@id,'u_3_b')]")).sendKeys("alam");
 		
-		driver.findElement(By.name("firstname")).sendKeys(firstuser);
-		driver.findElement(By.name("lastname")).sendKeys(lastuser);
-		driver.findElement(By.name("reg_email__")).sendKeys(email);
-		driver.findElement(By.name("reg_passwd__")).sendKeys(Re_email);
-		driver.findElement(By.name("reg_passwd__")).sendKeys(pw);
+		driver.findElement(By.xpath("//input[contains(@id,'u_3_d')]")).sendKeys("taw");
+		
+		driver.findElement(By.xpath("//input[contains(@id,'u_3_g')]")).sendKeys("alam@gmail.com");
+		
+		driver.findElement(By.xpath("//input[contains(@id,'password_step_input')]")).sendKeys("1234");
+		
+		// driver.findElement(By.name("reg_passwd__")).sendKeys("email");
 		
 		
 		/*driver.findElement(By.id("email")).sendKeys("alam@yahoo.com");

@@ -9,7 +9,7 @@ public class Program_01_Launch_page_Thread_sleep_using_Navigate {
 	public static void main(String[] args) throws InterruptedException {
 		  
 		
-		  System.setProperty("webdriver.chrome.driver","C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 		  WebDriver driver = new ChromeDriver();
 		  driver.navigate().to("https://www.facebook.com");
 		  

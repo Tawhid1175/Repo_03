@@ -18,7 +18,7 @@ public class practic {
 	public static void main(String[] args) throws IOException {
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
+	   System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -28,11 +28,15 @@ public class practic {
 		
 	    driver.findElement(By.id("email")).sendKeys("MD Tawhidul alam");
 	    
-	    TakesScreenshot ts = (TakesScreenshot) driver;
-	    
-	      File photo = ts.getScreenshotAs(OutputType.FILE);
+	      TakesScreenshot ts = (TakesScreenshot) driver;
 	      
-	      FileUtils.copyFile(photo, new File("./photo/chovi.png "));
+	      File shot = ts.getScreenshotAs(OutputType.FILE);
+	      
+	      
+	      FileUtils.copyFile(shot, new File("./facebook/alam.png"));
+	        
+	        System.out.println(" screenshot taken by MD ALMA");
+	    
 	    
 	    
 	    

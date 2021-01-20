@@ -10,7 +10,7 @@ public class program_06_window_handel_Tabs_ArrayList {
 
 	public static void main(String[] args) {
 		
-		 System.setProperty("webdriver.chrome.driver","C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 		 WebDriver driver =new ChromeDriver();
 		 
 		 driver.get("https://www.facebook.com");
@@ -20,7 +20,7 @@ public class program_06_window_handel_Tabs_ArrayList {
 		 ArrayList <String>tabs = new ArrayList<String>(driver.getWindowHandles());
          driver.switchTo().window(tabs.get(1));
 		 
-		 driver.findElement(By.name("websubmit")).click();
+         driver.findElement(By.linkText("Page Categories")).click();
 		 
 		// driver.findElement(By.id("email"))
 		 
