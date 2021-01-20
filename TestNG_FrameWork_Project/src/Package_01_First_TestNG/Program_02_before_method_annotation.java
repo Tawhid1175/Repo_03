@@ -23,13 +23,13 @@ public void beforeMethod() {
   @Test
   public void method1() {
 	  
-	  System.out.println(" This is my 1st code ");
+	  System.out.println(" This is my 1st code<<<<<<<<<<<<<<<<<< ");
 	  
   }  
 	  
  public void method2() {
 	  
-	  System.out.println(" This is my 2nd code ");
+	  System.out.println(" This is my 2nd code.............................. ");
 	  
   }  
  

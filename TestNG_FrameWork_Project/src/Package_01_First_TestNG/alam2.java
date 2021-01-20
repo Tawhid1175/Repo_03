@@ -13,42 +13,32 @@ public class alam2 {
 	  }
 
 
+@Test
+public void alam1() {
 	
+	System.out.println(" alam is good boy");
+}
+
+
+@Test
+public void dada() {
 	
+	System.out.println(" dada is good boy");
+}
+
+@Test
+public void rajib() {
 	
-  @Test(enabled = false)
-  public void login () {
-	System.out.println(" alam");  
-	  
-  }
-  
-  @Test( groups ="smokesuite")
-  public void logino () {
-	System.out.println(" launching the application");  
-	  
-  }
-  
-  
-  @Test( priority =1)
-  public void logino3 () {
-	System.out.println(" launching the application");  
-	  
-  }
- 
-  
-  @Test(invocationCount = 10)
-  public void login1 () {
-	System.out.println(" Rajib");  
-	  
-  }
-  
-  @Test
-  public void login2 () {
-	System.out.println(" launching the application");  
-	  
-  }
- 
- 
+	System.out.println(" rajib is good boy");
+}
+
+
+
+
+
+
+	
+
    @AfterMethod
   public void afterMethod() {
   }

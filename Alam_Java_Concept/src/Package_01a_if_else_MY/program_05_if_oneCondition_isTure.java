@@ -15,6 +15,9 @@ public class program_05_if_oneCondition_isTure {
 		if ( x % 2==0 ||x % 5==0) {
 			
 			System.out.println(" First condition is true ");
+		} else {
+			
+			System.out.println(" earth of beautiful ");
 		}
 		
 

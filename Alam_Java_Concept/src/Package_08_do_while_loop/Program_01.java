@@ -1,4 +1,4 @@
-package Package_do_while_loop;
+package Package_08_do_while_loop;
 
 public class Program_01 {
 

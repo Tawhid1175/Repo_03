@@ -13,6 +13,9 @@ public class program_04_if_one_condition_false {
 				if ( x % 2==0 && x % 5==0) {
 					
 					System.out.println("Both of the conditions is true ");
+				} else {
+					
+					System.out.println("  x is small");
 				}
 				
 

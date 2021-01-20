@@ -5,20 +5,18 @@ public class alam {
 	public static void main(String[] args) {
 		
 	
-       int a = 30;
-       
-      if ( a < 10) {
+      int a =5;
+      
+      if ( a==1) {
     	  
-    	  System.out.println(" a is bigger than ten");
-      } else if ( a < 32) {
+    	  System.out.println(" one is equal");
+      } else if ( a== 5) {
     	  
-    	  System.out.println(" a is biiger than 32");
+    	  System.out.println("five is equal to 5");
       } else {
-    	  System.out.println(" alam is good");
+    	  
+    	  System.out.println("nothing");
       }
-       
-       
-       
    
    
 

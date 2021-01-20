@@ -1,4 +1,4 @@
-package Program_07_Nested_Loop;
+package Package_07_Nested_Loop;
 
 public class alam2 {
 

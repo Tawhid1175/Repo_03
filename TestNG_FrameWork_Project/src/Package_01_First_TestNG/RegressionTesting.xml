@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="smoke">  
-<test thread-count ="2" name="RegressionTest">
+<test thread-count ="5" name="RegressionTest">
 
 
 
 
 <classes>
 <class name ="Package_01_First_TestNG.Program_06a_groups_Test"></class>
-<class name ="Package_01_First_TestNG.Program_02_before_method_annotation"></class>
 
 
 </classes>

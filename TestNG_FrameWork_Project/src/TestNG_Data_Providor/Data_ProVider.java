@@ -1,3 +1,4 @@
+
 package TestNG_Data_Providor;
 
 import org.testng.annotations.Test;
@@ -15,7 +16,7 @@ public class Data_ProVider {
 	 @BeforeClass
 	  public void OpenApplication() {
 		
-		  System.setProperty("webdriver.chrome.driver","C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 		  driver = new ChromeDriver();
 		  driver.navigate().to("https://www.facebook.com");
 		  

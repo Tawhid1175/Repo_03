@@ -15,7 +15,7 @@ public class Program_01_Definations {
 		   // Types of Operators
 		   // a: Arithimethic Operators = EX : +, -, *, %
 		
-		      // 1: UrarY Operators = (z++ , -x) se operator single operator er upor kaj kore
+		      // 1: UnarY Operators = (z++ , -x) se operator single operator er upor kaj kore
 		      // 2: Binary Operators = ( +, -, *, /) se operator kaj korte duita operator lage 
 		
 		   // b: Relational Operators = 

@@ -14,6 +14,10 @@ public class Program_02_if_condition_ture {
 			
 			
 			System.out.println(" x is bigger");
+		} else {
+			
+			System.out.println("nothing ");
+		
 		}
 		
 

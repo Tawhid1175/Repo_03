@@ -9,6 +9,21 @@ public class alam {
  // int a= 10+20*3/2-10;
   
 //System.out.println(a);
+		
+		int a, b , c;
+	 for ( a = 0; a < 3; a++ ) {
+		 System.out.println("* * * * * .........." + a);
+		 
+		 for(b = 0; b <3; b++) {
+		 
+		   System.out.println("........................");
+		 
+		 }
+		 
+	 }
+
+	
+	
 
 	
 			

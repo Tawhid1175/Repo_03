@@ -26,7 +26,7 @@ public class Program_06a_groups_Test {
   @Test(groups= {"smoke"})
   public void alam () {
 	  
-	  System.out.println(" alam is Layer");
+	  System.out.println(" alam is good boy");
   }
   
   @Test

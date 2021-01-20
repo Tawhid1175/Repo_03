@@ -1,17 +1,18 @@
-package Package_do_while_loop;
+package Package_08_do_while_loop;
 
 public class alam {
 
 	public static void main(String[] args) {
 		
-    int a = 1;
+   int i = 2;
+   
+    do { 
+    	
+    	System.out.println( " enter the vlau i ");
+    	
+    	i++;
+    } while( i < 5);
     
-    do {
-    	
-    	System.out.println(" ente the vali" + a);
-    	
-    	a++;
-    } while( a< 5);
 		
 
 	}

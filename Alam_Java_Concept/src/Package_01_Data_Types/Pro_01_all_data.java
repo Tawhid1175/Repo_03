@@ -6,7 +6,7 @@ public class Pro_01_all_data {
 		
 		
 		// Data Types
-		// 1:  character (a,b,c)
+		// 1: character (a,b,c)
 		// 2: Integer  ( 123)
 		// 3: long    (1234566789)
 		// 4: float   ( 1.25)
