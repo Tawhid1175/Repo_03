@@ -10,7 +10,7 @@ public class Pro_06_Login_execut {
 	public WebDriver driver;
 	 @BeforeMethod
 	  public void beforeMethod() {
-		 System.setProperty("webdriver.chrome.driver","C:\\Selenium\\ChromeBrowser\\chromedriver_win32/chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","C:\\MY Testing File\\Selenium\\Tools\\ChromeDriver\\chromedriver_win32/chromedriver.exe");
 		  driver = new ChromeDriver();
 		  driver.navigate().to("https://www.facebook.com");
          driver.manage().window().maximize();
@@ -22,9 +22,9 @@ public class Pro_06_Login_execut {
 	
   @Test
   public void f() {
-	  
-	  Pro_06_Login obj =new Pro_06_Login(driver);
-	  obj.fblogin();
+	 Alam_01 obj = new Alam_01(driver);
+	 
+	 obj.alam();
 	  
   }
  

@@ -63,6 +63,8 @@
 			<version>6.14.3</version>
 			<scope>test</scope>
 		</dependency>
+		
+		
 
 
 		<dependency>
@@ -161,13 +163,51 @@
 			<artifactId>json-simple</artifactId>
 			<version>1.1.1</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>1.3.2</version>
+</dependency>
 
-
-
-
-
-
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.8.0</version>
+</dependency>
 
 	</dependencies>
+	
+	 <build> 
+    
+    <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>C:\Users\Tawhi\git\repository2\mavenFaceBook\src\main\java\package_09_Maulti_Thread_class</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
+</plugins>
+    
+    
+  
+    
+  </build>  
+  
+  
+    
+ 
+    
+	
+	
+	
 
 </project>
